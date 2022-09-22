@@ -1,6 +1,5 @@
 package kata1;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
+import java.time.LocalDate;
 /**
  *
  * @author agonz
@@ -8,9 +7,8 @@ import java.util.GregorianCalendar;
 public class Kata1 {
 
     public static void main(String[] args) {
-        Calendar date;
-        date = GregorianCalendar.getInstance();
-        date.set(2002, 1, 11);
+        LocalDate date;
+        date = LocalDate.of(2002, 1, 11);
         Person person = new Person("Rubén", date);
         System.out.println(person.getName() + " tiene " + person.getAge() + " Años.");
     }
